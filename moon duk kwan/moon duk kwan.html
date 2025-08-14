@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Duk Kwan Huehuetán - Taekwondo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #8B0000; /* Rojo oscuro */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #666;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #8B0000; /* Rojo oscuro */
+            text-align: center;
+        }
+        .section-title {
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #00008B; /* Azul oscuro */
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .teacher-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        .teacher-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #8B0000;
+        }
+        .teacher-info {
+            flex-grow: 1;
+        }
+        .teacher-info h3 {
+            margin: 0 0 5px 0;
+            color: #8B0000;
+        }
+        .class-schedule {
+            margin-top: 20px;
+        }
+        .class-schedule table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .class-schedule th, .class-schedule td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .class-schedule th {
+            background-color: #8B0000;
+            color: white;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 8px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MOON DUK KWAN HUEHUETÁN</h1>
+        <p>Tu camino en el Taekwondo</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Acerca de</a>
+                <div class="dropdown-content">
+                    <a href="#maestros">Nuestros Maestros</a>
+                    <a href="#clases">Nuestras Clases</a>
+                </div>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="inicio">
+        <h2 class="section-title">¡Bienvenido a Moon Duk Kwan Huehuetán!</h2>
+        <p>En Moon Duk Kwan Huehuetán, nos dedicamos a enseñar el arte marcial del Taekwondo, fomentando la disciplina, el respeto y el desarrollo personal. Nuestra escuela es un lugar donde niños, jóvenes y adultos pueden crecer y fortalecerse.</p>
+        <p>Aquí aprenderás técnicas de defensa personal, mejorarás tu condición física y desarrollarás valores esenciales para la vida. ¡Únete a nuestra familia de Taekwondo y comienza tu viaje hoy mismo!</p>
+
+        <div class="image-gallery">
+            <img src="https://scontent-mia5-2.xx.fbcdn.net/v/t39.30808-6/502636185_1319097390001975_6905905889994629453_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Fv8kIDdpl1oQ7kNvwGcorjY&_nc_oc=AdlQmhBw30_nbviEnSZWJwUxwFzzLj0_Y2P8HKbPSsRfYhUHvdJAgLD4iPOE1I1b2_k&_nc_zt=23&_nc_ht=scontent-mia5-2.xx&_nc_gid=z_uucYMiRKmIz7diHdX9-A&oh=00_AfU-Z1CEapk39Vys9DsC8PNLxRIH8vaUii8vB1wB0U8vng&oe=68A05A15" alt="Clase de Taekwondo">
+            <img src="https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/500162658_1313120293933018_6587180820454800171_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=b4nZaVxYH5sQ7kNvwHxIhJr&_nc_oc=Adlv3-h4arWFYML_ACD3xOtNcGW59jmCq5lxSIc3j3_tq2RRSCLBMOuIy3Rq5rfcV3U&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=onwURj7809N2ms0uxilUgg&oh=00_AfVhBz3v2VAkBoUnGAp6x2aCFuljOHPJNWjUyOz6iFF5GQ&oe=68A08136" alt="Entrenamiento de Taekwondo">
+            <img src="https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/495385609_1303356854909362_5911833521829064500_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=uoZMZODofAUQ7kNvwHjU40i&_nc_oc=Adl7oOJb7mpWrz3G0RTKxG68yVHCpELsOoEyetpA04pdRHjeI80FFwJ3tu_841D4vog&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=POwpmr2cCHFb5WGvoPKuSQ&oh=00_AfWbJpnPYGJlRTKn8ktudthbM92d4esCkTfVVszIpfEFhg&oe=68A06907" alt="Estudiantes de Taekwondo">
+        </div>
+    </div>
+
+    <div class="container" id="maestros">
+        <h2 class="section-title">Nuestros Maestros</h2>
+        <p>Contamos con un equipo de maestros altamente calificados y dedicados a guiar a nuestros estudiantes en su camino en el Taekwondo.</p>
+
+        <div class="teacher-card">
+            <img src="https://scontent-mia5-2.xx.fbcdn.net/v/t39.30808-6/500058987_1315852990326415_4565814387263912179_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=o8WhIT02ObwQ7kNvwGFW9F6&_nc_oc=AdnFLTXN9yLvPqg13ftoXDLqthbbd-PBStb41uuicEuoHmZ1rfZKIN_gufhaYe3N4i4&_nc_zt=23&_nc_ht=scontent-mia5-2.xx&_nc_gid=XQ7qaRNQXzCvkHhuv5lduw&oh=00_AfW652XQwUXv0RVx5Q4Tgv2RvzWCRDRrLrZgRPOah_OHVw&oe=68A06D08" alt="Maestro Pedro">
+            <div class="teacher-info">
+                <h3>Maestro Pedro (<span class="highlight">Dueño de la Escuela</span>)</h3>
+                <p>El Maestro Pedro es el fundador y director de Moon Duk Kwan Huehuetán. Con años de experiencia y una pasión inquebrantable por el Taekwondo, él lidera nuestra escuela con sabiduría y dedicación. Su enfoque principal es inculcar disciplina y respeto en cada uno de sus alumnos.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card">
+            <img src="https://scontent-mia5-1.xx.fbcdn.net/v/t39.30808-6/496750239_1303061918272189_298722546023995906_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1fvHlPjfcCgQ7kNvwHwq795&_nc_oc=AdnJJ8A3b67tnxXDINzGLcMU2eZ5hLHOJqbLr4f0Am_GS-AT-iZP7t81yCppwRJo1z8&_nc_zt=23&_nc_ht=scontent-mia5-1.xx&_nc_gid=yCki2ym3DaLHgH51THuPPg&oh=00_AfXEE4Kkjsu5SWyG65ww7TMq7oAf6xLldKZyWBoDR0lTiw&oe=68A06B6B" alt="Maestra Nimsi">
+            <div class="teacher-info">
+                <h3>Maestra Nimsi</h3>
+                <p>La Maestra Nimsi aporta una energía única a nuestras clases. Es experta en técnicas de patadas y formas, y su paciencia y entusiasmo la hacen una favorita entre nuestros estudiantes más jóvenes. Se especializa en fomentar la confianza y la coordinación.</p>
+            </div>
+        </div>
+
+        <div class="teacher-card">
+            <img src="https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/493555114_1334979855080395_5369730964525335815_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DQdpnrySskcQ7kNvwFx8kN4&_nc_oc=AdnsmT4_CaHMZxw51ncnPYcumx-M61ne3hm3kCZMuze--zOpYKSTt8VfGJ8_X8dYi8M&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=Y6WqGIt0kd134YwQMz5zzw&oh=00_AfXg_i7pA2eZzgL17qf_ey-Ah84gMwWqsRSm43TKYz7mSA&oe=68A086DB" alt="Maestra Alanna">
+            <div class="teacher-info">
+                <h3>Maestra Alanna</h3>
+                <p>La Maestra Alanna es conocida por su rigor técnico y su capacidad para motivar a los estudiantes a superar sus límites. Ella se enfoca en el desarrollo de la fuerza, la resistencia y la aplicación práctica de las técnicas de Taekwondo, preparando a los alumnos para el éxito tanto dentro como fuera del dojang.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="clases">
+        <h2 class="section-title">Nuestras Clases y Horarios</h2>
+        <p>Ofrecemos clases adaptadas a diferentes edades y niveles, garantizando un aprendizaje efectivo y divertido para todos.</p>
+
+        <div class="class-schedule">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clase</th>
+                        <th>Horario</th>
+                        <th>Costo Mensual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="highlight">Pequeños Tigres</span> (3-6 años aprox.)</td>
+                        <td>5:00 PM - 6:00 PM</td>
+                        <td rowspan="3">$500 MXN</td>
+                    </tr>
+                    <tr>
+                        <td><span class="highlight">Niños y Jóvenes</span> (7-15 años aprox.)</td>
+                        <td>6:00 PM - 7:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td><span class="highlight">Adultos</span> (16+ años)</td>
+                        <td>7:00 PM - 8:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center; margin-top: 20px;">
+                La <span class="highlight">inscripción tiene un costo de $800 MXN</span>.
+            </p>
+        </div>
+    </div>
+
+    <div class="container" id="contacto">
+        <h2 class="section-title">Contáctanos</h2>
+        <p>¡Estamos listos para recibirte! Si tienes alguna pregunta o deseas inscribirte, no dudes en contactarnos.</p>
+        <div class="contact-info">
+            <p><strong>WhatsApp:</strong> <a href="https://web.whatsapp.com/" target="_blank">+52 964 108 0267</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/mdkhuehuetan" target="_blank">Moo Duk Kwan Huehuetán</a></p>
+            <p>¡Síguenos en nuestras redes sociales para estar al tanto de las últimas noticias y eventos!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Moon Duk Kwan Huehuetán. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // No se requiere JavaScript complejo para esta estructura básica.
+        // El menú desplegable ya funciona con CSS puro (:hover).
+        // Si más adelante necesitas funcionalidades dinámicas, aquí agregarías tu JS.
+    </script>
+
+</body>
+</html>
